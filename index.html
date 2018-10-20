@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div id="myNav" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&#x1f383;</a>
+
+        <div class="overlay-content">
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>
+
+    </div>
+
+    <button onclick="openNav()">OPEN</button>
+
+
+    <script>
+        function openNav() {
+            document.getElementById('myNav').style.height = '100%';
+        }
+
+        function closeNav() {
+            document.getElementById('myNav').style.height = '0%';
+        }
+    </script>
+</body>
+</html>
